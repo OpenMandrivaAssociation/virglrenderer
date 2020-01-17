@@ -35,6 +35,7 @@ qemu to implement 3D GPU support for the virtio GPU.
 %package -n %{libname}
 Summary:	Virgl Rendering library
 Group:		Emulators
+Obsoletes:		%{mklibname virglrenderer 0} < 0.8.1
 
 %description -n %{libname}
 The virgil3d rendering library is a library used by
