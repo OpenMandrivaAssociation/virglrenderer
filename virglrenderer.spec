@@ -10,7 +10,7 @@
 %global gitversion %{nil}
 
 Name:		virglrenderer
-Version:	0.8.0
+Version:	0.8.1
 Release:	1
 Summary:	Virgl Rendering library
 Group:		Emulators
@@ -18,7 +18,7 @@ License:	MIT
 #VCS: git:git://anongit.freedesktop.org/git/virglrenderer
 # git snapshot.  to recreate, run:
 # ./make-git-snapshot.sh `cat commitid`
-Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{name}-%{version}.tar.bz2
 
 BuildRequires:	autoconf
 BuildRequires:	autoconf-archive
@@ -64,7 +64,7 @@ that can be used along with the mesa virgl
 driver to test virgl rendering without GL.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-%{name}-%{version} -p1
 
 %build
 ./autogen.sh
