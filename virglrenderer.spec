@@ -3,7 +3,7 @@
 # "fix" underlinking:
 %define _disable_ld_no_undefined 1
 
-%global major 0
+%global major 1
 %define libname %mklibname virglrenderer %major
 %define devname %mklibname -d virglrenderer
 %global gitdate %{nil}
