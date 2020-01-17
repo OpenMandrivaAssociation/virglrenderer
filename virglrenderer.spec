@@ -20,10 +20,7 @@ License:	MIT
 # ./make-git-snapshot.sh `cat commitid`
 Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{name}-%{version}.tar.bz2
 
-BuildRequires:	autoconf
-BuildRequires:	autoconf-archive
-BuildRequires:	automake
-BuildRequires:	libtool
+BuildRequires:	meson
 BuildRequires:	x11-util-macros
 BuildRequires:	pkgconfig(epoxy)
 BuildRequires:	pkgconfig(gbm)
@@ -67,14 +64,11 @@ driver to test virgl rendering without GL.
 %autosetup -n %{name}-%{name}-%{version} -p1
 
 %build
-./autogen.sh
-
-%configure --disable-silent-rules
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
-find %{buildroot} -type f -name '*.la' | xargs rm -f -- || :
+%meson_install
 
 %files -n %{libname}
 %license COPYING
