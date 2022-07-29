@@ -10,7 +10,7 @@
 %global gitversion %{nil}
 
 Name:		virglrenderer
-Version:	0.8.1
+Version:	0.9.1
 Release:	1
 Summary:	Virgl Rendering library
 Group:		Emulators
