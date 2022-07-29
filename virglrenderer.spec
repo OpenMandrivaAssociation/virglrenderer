@@ -18,7 +18,7 @@ License:	MIT
 #VCS: git:git://anongit.freedesktop.org/git/virglrenderer
 # git snapshot.  to recreate, run:
 # ./make-git-snapshot.sh `cat commitid`
-Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{name}-%{version}.tar.bz2
+Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{version}.tar.gz
 
 BuildRequires:	meson
 BuildRequires:	x11-util-macros
@@ -62,7 +62,7 @@ that can be used along with the mesa virgl
 driver to test virgl rendering without GL.
 
 %prep
-%autosetup -n %{name}-%{name}-%{version} -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %meson
