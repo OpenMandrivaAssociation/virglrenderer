@@ -10,7 +10,7 @@
 %global gitversion %{nil}
 
 Name:		virglrenderer
-Version:	0.10.3
+Version:	0.10.4
 Release:	1
 Summary:	Virgl Rendering library
 Group:		Emulators
@@ -18,7 +18,8 @@ License:	MIT
 #VCS: git:git://anongit.freedesktop.org/git/virglrenderer
 # git snapshot.  to recreate, run:
 # ./make-git-snapshot.sh `cat commitid`
-Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{version}.tar.gz
+#Source0:	https://github.com/freedesktop/virglrenderer/archive/%{name}-%{version}.tar.gz
+Source0:  https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/%{version}/virglrenderer-%{version}.tar.bz2
 
 BuildRequires:	meson
 BuildRequires:	x11-util-macros
