@@ -11,7 +11,7 @@
 
 Name:		virglrenderer
 Version:	0.10.4
-Release:	1
+Release:	2
 Summary:	Virgl Rendering library
 Group:		Emulators
 License:	MIT
