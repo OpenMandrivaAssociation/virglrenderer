@@ -3,6 +3,8 @@
 # "fix" underlinking:
 %define _disable_ld_no_undefined 1
 
+%global optflags %{optflags} -Wno-embedded-directive
+
 %global major 1
 %define libname %mklibname virglrenderer %major
 %define devname %mklibname -d virglrenderer
@@ -10,8 +12,8 @@
 %global gitversion %{nil}
 
 Name:		virglrenderer
-Version:	0.10.4
-Release:	2
+Version:	1.0.0
+Release:	1
 Summary:	Virgl Rendering library
 Group:		Emulators
 License:	MIT
