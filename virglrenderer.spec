@@ -10,8 +10,8 @@
 %global gitversion %{nil}
 
 Name:		virglrenderer
-Version:	0.10.4
-Release:	2
+Version:	1.0.0
+Release:	1
 Summary:	Virgl Rendering library
 Group:		Emulators
 License:	MIT
