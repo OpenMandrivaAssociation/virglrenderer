@@ -30,6 +30,7 @@ BuildRequires:	pkgconfig(gbm)
 BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(libdrm)
+BuildRequires:  python%{pyver}dist(pyyaml)
 
 %description
 The virgil3d rendering library is a library used by
