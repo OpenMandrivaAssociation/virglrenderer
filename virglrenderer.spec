@@ -1,4 +1,4 @@
-# Please keep this package in sync with FC
+%global optflags %{optflags} -Wno-incompatible-pointer-types-discards-qualifiers
 
 # "fix" underlinking:
 %define _disable_ld_no_undefined 1
